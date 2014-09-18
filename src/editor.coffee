@@ -2613,7 +2613,7 @@ class Editor extends Model
     @emitter.emit 'did-change-grammar'
 
   handleMarkerCreated: (marker) =>
-    if marker.matchesAttributes(@getSelectionMarkerAttributes())
+    if marker.matchesProperties(@getSelectionMarkerAttributes())
       @addSelection(marker)
 
   ###
